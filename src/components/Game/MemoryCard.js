@@ -1,11 +1,15 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
 // import {Button, Navbar} from 'reactstrap';
 import {
   Button,
   Card,
+  CardImg,
+  CardImgOverlay,
+  CardText,
   Col,
-  Row} from 'reactstrap';
+  Row
+} from 'reactstrap';
 
 
 export default class Example extends React.Component {
@@ -22,11 +26,16 @@ export default class Example extends React.Component {
       isOpen: !this.state.isOpen
     });
   }
-  render() {
+ render() {
+   console.log(this.props);
     return (
-        <Card>{this.props.name}
-       </Card>
-            
-   );
+      <Card onClick={() => this.props.handleCardClick(this.props.id)}>
+        {/* <CardImg width="100%" src={this.props.image} alt="Card image cap" /> */}
+        {/* <CardImgOverlay> */}
+          <CardText>{this.props.name}</CardText>
+        {/* </CardImgOverlay> */}
+      </Card>
+
+    );
   }
 }
