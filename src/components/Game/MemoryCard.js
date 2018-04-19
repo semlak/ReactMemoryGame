@@ -1,41 +1,13 @@
-import React, { Component } from 'react';
+"use strict";
+import React from 'react';
+import { Button, Card, CardImg, CardImgOverlay, CardText, Col, Row } from 'reactstrap';
 
-// import {Button, Navbar} from 'reactstrap';
-import {
-  Button,
-  Card,
-  CardImg,
-  CardImgOverlay,
-  CardText,
-  Col,
-  Row
-} from 'reactstrap';
-
-
-export default class Example extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.toggle = this.toggle.bind(this);
-    this.state = {
-      isOpen: false
-    };
-  }
-  toggle() {
-    this.setState({
-      isOpen: !this.state.isOpen
-    });
-  }
- render() {
-   console.log(this.props);
-    return (
-      <Card onClick={() => this.props.handleCardClick(this.props.id)}>
-        {/* <CardImg width="100%" src={this.props.image} alt="Card image cap" /> */}
-        {/* <CardImgOverlay> */}
-          <CardText>{this.props.name}</CardText>
-        {/* </CardImgOverlay> */}
+const MemoryCard = props => (
+      <Card 
+        className="memory-card embed-responsive embed-responsive-1by1" 
+        onClick={() => props.handleCardClick(props.id)}>
+        <CardImg className="embed-responsive-item" width="100%" src={props.image} alt="Card image cap" />
       </Card>
+)
 
-    );
-  }
-}
+export default MemoryCard;

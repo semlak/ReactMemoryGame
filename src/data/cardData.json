@@ -1,0 +1,27 @@
+
+{
+	"CardData": [
+	{"id": 0, "image": "./images/amon-sul.png"},
+	{"id": 1, "image": "./images/angband.jpg"},
+	{"id": 2, "image": "./images/elrond.jpg"},
+	{"id": 3, "image": "./images/feanor.jpg"},
+	{"id": 4, "image": "./images/finarfin.jpg"},
+	{"id": 5, "image": "./images/fingolfin.png"},
+	{"id": 6, "image": "./images/fingon.jpg"},
+	{"id": 7, "image": "./images/finwe.jpg"},
+	{"id": 8, "image": "./images/galadriel.jpg"},
+	{"id": 9, "image": "./images/gandalf.jpg"},
+	{"id": 10, "image": "./images/gil-galad.jpg"},
+	{"id": 11, "image": "./images/grond.jpg"},
+	{"id": 12, "image": "./images/ingwe.jpg"},
+	{"id": 13, "image": "./images/luthien.jpg"},
+	{"id": 14, "image": "./images/manwe.jpg"},
+	{"id": 15, "image": "./images/Melkor-and-Ungoliant.jpg"},
+	{"id": 16, "image": "./images/morgoth.jpg"},
+	{"id": 17, "image": "./images/nazgul.jpg"},
+	{"id": 18, "image": "./images/ringil.jpg"},
+	{"id": 19, "image": "./images/silmaril.jpg"},
+	{"id": 20, "image": "./images/utumno.jpg"}
+]
+}
+

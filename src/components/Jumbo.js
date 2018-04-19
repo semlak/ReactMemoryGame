@@ -1,20 +1,24 @@
 import React from 'react';
-import { Jumbotron, Button } from 'reactstrap';
+import {Container, Jumbotron, Button } from 'reactstrap';
 
-const Example = (props) => {
+const Jumbo = (props) => {
   return (
     <div>
       <Jumbotron>
-        <h1 className="display-3">Hello, world!</h1>
-        <p className="lead">This is a simple hero unit, a simple Jumbotron-style component for calling extra attention to featured content or information.</p>
-        <hr className="my-2" />
-        <p>It uses utility classes for typgraphy and spacing to space content out within the larger container.</p>
+        <h1 className="display-3">ReactJS Memory Game</h1>
         <p className="lead">
-          <Button color="primary">Learn More</Button>
+          A simple memory game created with ReactJS.  
         </p>
+        <hr className="my-2" />
+        <Container className="instructions">
+          <h3>Instructions</h3>
+          <p>You select one of the available images.</p> 
+          <p>The images will reload, and you need to keep selecting a new image.</p> 
+          <p>Your score will continue to update with each succesful move, until the game ends.</p>
+        </Container>
       </Jumbotron>
     </div>
   );
 };
 
-export default Example;
+export default Jumbo;

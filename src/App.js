@@ -4,7 +4,7 @@ import './App.css';
 import {Container} from 'reactstrap';
 import Navbar from "./components/Navbar";
 import Jumbo from "./components/Jumbo";
-import MemoryGame from "./components/Game/Main.jsx"
+import MemoryGame from "./components/Game/Main.js"
 
 class App extends Component {
   render() {
